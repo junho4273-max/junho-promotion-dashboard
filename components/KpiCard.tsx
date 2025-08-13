@@ -1,4 +1,3 @@
-
 "use client";
 
 import { cn } from "@/components/ui/utils";
@@ -10,7 +9,7 @@ export function KpiCard({
   title: string;
   value: string;
   sub?: string;
-  ringValue: number;
+  ringValue: number; // 0-100
   ariaLabel?: string;
   tone?: "success" | "warn" | "alert";
   staticRing?: boolean;
@@ -33,24 +32,55 @@ export function KpiCard({
   );
 }
 
-function ProgressRing({ value, className, staticRing }: { value: number; className?: string; staticRing?: boolean; }) {
+function ProgressRing({
+  value,
+  className = "",
+  staticRing
+}: {
+  value: number;
+  className?: string;
+  staticRing?: boolean;
+}) {
   const size = 56, stroke = 6;
   const r = (size - stroke) / 2;
   const c = 2 * Math.PI * r;
   const pct = Math.max(0, Math.min(100, value));
   const dash = (pct / 100) * c;
 
+  const ringClass = cn(className, staticRing && "opacity-60");
+
   return (
     <svg width={size} height={size} role="img" aria-label={`progress-ring ${pct}%`}>
-      <circle cx={size/2} cy={size/2} r={r} stroke="currentColor" strokeWidth={stroke} className="opacity-20" fill="none"/>
       <circle
-        cx={size/2} cy={size/2} r={r}
-        stroke="currentColor" strokeWidth={stroke}
-        strokeDasharray={`${dash} ${c}`} strokeLinecap="round"
-        className={staticRing ? "opacity-60 " + (className or "") : (className or "")}
-        fill="none" transform={`rotate(-90 ${size/2} ${size/2})`}
+        cx={size / 2}
+        cy={size / 2}
+        r={r}
+        stroke="currentColor"
+        strokeWidth={stroke}
+        className="opacity-20"
+        fill="none"
       />
-      <text x="50%" y="50%" dominantBaseline="middle" textAnchor="middle" fontSize="12">{Math.round(pct)}%</text>
+      <circle
+        cx={size / 2}
+        cy={size / 2}
+        r={r}
+        stroke="currentColor"
+        strokeWidth={stroke}
+        strokeDasharray={`${dash} ${c}`}
+        strokeLinecap="round"
+        className={ringClass}
+        fill="none"
+        transform={`rotate(-90 ${size / 2} ${size / 2})`}
+      />
+      <text
+        x="50%"
+        y="50%"
+        dominantBaseline="middle"
+        textAnchor="middle"
+        fontSize="12"
+      >
+        {Math.round(pct)}%
+      </text>
     </svg>
   );
 }
