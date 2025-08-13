@@ -1,0 +1,112 @@
+[
+  {
+    "date": "2025-06-03",
+    "month": "2025-06",
+    "teamMember": "최재호",
+    "productGroup": "건강",
+    "premiumType": "초회",
+    "premium": 2200000,
+    "meetings": 3,
+    "proposals": 2,
+    "contracts": 1
+  },
+  {
+    "date": "2025-06-10",
+    "month": "2025-06",
+    "teamMember": "우주연",
+    "productGroup": "암",
+    "premiumType": "초회",
+    "premium": 1800000,
+    "meetings": 4,
+    "proposals": 3,
+    "contracts": 2
+  },
+  {
+    "date": "2025-06-17",
+    "month": "2025-06",
+    "teamMember": "박주현",
+    "productGroup": "상해",
+    "premiumType": "계속",
+    "premium": 400000,
+    "meetings": 2,
+    "proposals": 1,
+    "contracts": 1
+  },
+  {
+    "date": "2025-07-05",
+    "month": "2025-07",
+    "teamMember": "최재호",
+    "productGroup": "건강",
+    "premiumType": "초회",
+    "premium": 2500000,
+    "meetings": 4,
+    "proposals": 2,
+    "contracts": 1
+  },
+  {
+    "date": "2025-07-12",
+    "month": "2025-07",
+    "teamMember": "우주연",
+    "productGroup": "암",
+    "premiumType": "초회",
+    "premium": 2100000,
+    "meetings": 5,
+    "proposals": 3,
+    "contracts": 2
+  },
+  {
+    "date": "2025-07-20",
+    "month": "2025-07",
+    "teamMember": "김주원",
+    "productGroup": "치아",
+    "premiumType": "초회",
+    "premium": 900000,
+    "meetings": 3,
+    "proposals": 2,
+    "contracts": 1
+  },
+  {
+    "date": "2025-08-02",
+    "month": "2025-08",
+    "teamMember": "최재호",
+    "productGroup": "건강",
+    "premiumType": "초회",
+    "premium": 1600000,
+    "meetings": 3,
+    "proposals": 2,
+    "contracts": 1
+  },
+  {
+    "date": "2025-08-07",
+    "month": "2025-08",
+    "teamMember": "우주연",
+    "productGroup": "암",
+    "premiumType": "초회",
+    "premium": 1900000,
+    "meetings": 4,
+    "proposals": 2,
+    "contracts": 1
+  },
+  {
+    "date": "2025-08-11",
+    "month": "2025-08",
+    "teamMember": "박주현",
+    "productGroup": "상해",
+    "premiumType": "초회",
+    "premium": 800000,
+    "meetings": 2,
+    "proposals": 1,
+    "contracts": 1
+  },
+  {
+    "date": "2025-08-12",
+    "month": "2025-08",
+    "teamMember": "김주원",
+    "productGroup": "치아",
+    "premiumType": "계속",
+    "premium": 300000,
+    "meetings": 1,
+    "proposals": 1,
+    "contracts": 1
+  }
+]
